@@ -1,7 +1,7 @@
 version: '3'
 services:
   gitbook:
-    build:
+    build: gitbook
  context: .
       dockerfile: Dockerfile
     ports:

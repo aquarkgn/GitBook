@@ -1,3 +1,5 @@
+SHELL := /bin/bash
+
 PROJ_PATH := $(shell dirname $(abspath $(lastword $(MAKEFILE_LIST))))
 
 GIT_SUBMODULE_COMMAND = "git submodule update --init --recursive"

@@ -2,9 +2,9 @@ version: '3'
 services:
   gitbook:
     image: node:latest
-    volumes:
-      - ./book:/gitbook
     working_dir: /gitbook
-    command: gitbook serve --lrport 4002 --port 4000
     ports:
       - 4000:4000
+    volumes:
+      - ./book:/gitbook
+    command: npm install gitbook-cli -g && gitbook init && gitbook serve

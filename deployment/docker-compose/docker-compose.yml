@@ -1,10 +1,10 @@
 version: '3'
 services:
   gitbook:
-    image: node:latest
-    working_dir: /gitbook
+    build:
+ context: .
+      dockerfile: Dockerfile
     ports:
       - 4000:4000
     volumes:
-      - ./book:/gitbook
-    command: npm install gitbook-cli -g && gitbook init && gitbook serve
+      - ./book:/srv/gitbook

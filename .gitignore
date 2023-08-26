@@ -24,4 +24,4 @@ go.work
 .idea
 .history
 
-/deployment/docker-compose/book
+/deployment/docker-compose/book/*

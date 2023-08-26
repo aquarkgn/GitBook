@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:14.6.0-alpine
 
 RUN npm install -g gitbook-cli && \
     gitbook fetch && \
@@ -6,4 +6,4 @@ RUN npm install -g gitbook-cli && \
 
 WORKDIR /srv/gitbook
 
-CMD ["gitbook", "serve"]
+CMD ["gitbook", "serve"]ls

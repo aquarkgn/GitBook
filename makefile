@@ -7,6 +7,7 @@ run: git-submodule-foreach docker-compose-up-d
 git-submodule-foreach:
 	@echo "git submodule foreach $(GIT_SUBMODULE_COMMAND)"
 	@cd $(PROJ_PATH)
+	@pwd
 	@$(GIT_SUBMODULE_COMMAND)
 
 docker-compose-up-d:

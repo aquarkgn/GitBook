@@ -1,4 +1,3 @@
 [submodule "deployment/docker-compose/book"]
 	path = deployment/docker-compose/book
-	url = git@github.com:aquarkgn/architectural-designer.git
-	branch = main
+	url = https://github.com/aquarkgn/architectural-designer.git

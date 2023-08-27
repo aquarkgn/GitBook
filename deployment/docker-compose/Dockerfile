@@ -6,4 +6,4 @@ RUN npm install -g gitbook-cli && \
 
 WORKDIR /srv/gitbook
 
-CMD ["gitbook", "serve"]ls
+CMD ["gitbook", "serve"]
